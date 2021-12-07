@@ -1,0 +1,39 @@
+{
+  "name": "debootable",
+  "version": "1.0.0",
+  "description": "A kahoot-inspired game in which the owner generates prompts with 4 answers. 3 of these will be correct, while 1 answer will be \"debatable\". It is up to the players to figure out which one is debatable, or get \"de boot\" after 3 lives.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "webpack --watch",
+    "build": "npx webpack",
+    "server-dev": "npx nodemon server/index.js",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoganMichalicek/debootable.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LoganMichalicek/debootable/issues"
+  },
+  "homepage": "https://github.com/LoganMichalicek/debootable#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "jest": "^27.4.3",
+    "nodemon": "^2.0.15",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
