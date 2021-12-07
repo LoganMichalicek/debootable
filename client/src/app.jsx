@@ -1,5 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Home from './components/home.jsx';
+import Join from './components/join.jsx';
+import Host from './components/host.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -8,7 +13,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <h1>Loaded from React!</h1>
+      <Router forceRefresh>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/join" element={<Join />} />
+          <Route path="/host" element={<Host />} />
+        </Routes>
+      </Router>
     );
   }
 }
