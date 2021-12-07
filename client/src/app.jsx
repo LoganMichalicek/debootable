@@ -13,7 +13,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
+      <Router forceRefresh>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/join" element={<Join />} />
